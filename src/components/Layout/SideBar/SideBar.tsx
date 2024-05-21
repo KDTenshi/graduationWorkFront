@@ -18,7 +18,7 @@ const SideBar: FC<SideBarProps> = ({ isShown = false, setIsShown }) => {
         <Image src={Cross} alt="Cross" />
       </button>
       <Suspense fallback={<NavBarSkeleton direction="vertical" />}>
-        <NavBarSkeleton direction="vertical" />
+        <NavBar direction="vertical" />
       </Suspense>
     </div>
   );
