@@ -1,0 +1,182 @@
+@use "./colors" as c;
+@use "./spacings" as sp;
+
+// FONT MIXINS
+
+// Black font
+
+@mixin font_black($size: 16px, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+  color: c.$black;
+
+  &::selection {
+    background: c.$black;
+    color: c.$white;
+  }
+}
+
+@mixin font_black_12($weight: 400) {
+  @include font_black(12px, $weight);
+}
+
+@mixin font_black_16($weight: 400) {
+  @include font_black(16px, $weight);
+}
+
+@mixin font_black_20($weight: 400) {
+  @include font_black(20px, $weight);
+}
+
+@mixin font_black_24($weight: 400) {
+  @include font_black(24px, $weight);
+}
+
+@mixin font_black_30($weight: 400) {
+  @include font_black(30px, $weight);
+}
+
+@mixin font_black_36($weight: 400) {
+  @include font_black(36px, $weight);
+}
+
+// White font
+
+@mixin font_white($size: 16px, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+  color: c.$white;
+
+  &::selection {
+    background: c.$white;
+    color: c.$black;
+  }
+}
+
+@mixin font_white_12($weight: 400) {
+  @include font_white(12px, $weight);
+}
+
+@mixin font_white_16($weight: 400) {
+  @include font_white(16px, $weight);
+}
+
+@mixin font_white_20($weight: 400) {
+  @include font_white(20px, $weight);
+}
+
+@mixin font_white_24($weight: 400) {
+  @include font_white(24px, $weight);
+}
+
+@mixin font_white_30($weight: 400) {
+  @include font_white(30px, $weight);
+}
+
+@mixin font_white_36($weight: 400) {
+  @include font_white(36px, $weight);
+}
+
+// Links
+
+@mixin link_black() {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    background: c.$black;
+    transition: all 0.25s;
+  }
+
+  &:hover {
+    &::after {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+}
+
+@mixin link_black_to_white() {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.25s;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    background: c.$white;
+    transition: all 0.25s;
+  }
+
+  &:hover {
+    color: c.$white;
+
+    &::after {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+}
+
+@mixin link_white() {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    background: c.$white;
+    transition: all 0.25s;
+  }
+
+  &:hover {
+    &::after {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+}
+
+@mixin link_white_to_black() {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.25s;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    background: c.$black;
+    transition: all 0.25s;
+  }
+
+  &:hover {
+    color: c.$black;
+
+    &::after {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+}

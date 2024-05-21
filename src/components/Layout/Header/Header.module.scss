@@ -1,0 +1,65 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: c.$white;
+  z-index: 100;
+}
+
+.Wrap {
+  padding: sp.$mid_small sp.$ultra_large;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  text-decoration: none;
+}
+
+.Links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: sp.$mid_small;
+}
+
+.Link {
+  @include font_black_16();
+  @include link_black();
+}
+
+.Burger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .Wrap {
+    padding: sp.$mid_small sp.$extra_large;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Links {
+    display: none;
+  }
+
+  .Burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrap {
+    padding: sp.$small sp.$mid_large;
+  }
+}

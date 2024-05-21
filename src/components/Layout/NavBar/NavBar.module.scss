@@ -1,0 +1,150 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.NavBar {
+  background: c.$black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+
+  &_Vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Item {
+      display: block;
+    }
+  }
+}
+
+.NavBarSkeleton {
+  background: c.$black;
+  height: 50px;
+  overflow: hidden;
+
+  .Loader {
+    width: 0px;
+    height: 100%;
+    box-shadow: 0 0 25vw 10vw c.$white;
+    background: c.$white;
+    animation: Loading_Horizontal 0.75s linear infinite;
+  }
+
+  &_Vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: sp.$mid_small;
+
+    .Loader {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px dashed c.$white;
+      animation: Loading_Vertical 5s linear infinite;
+    }
+
+    & p {
+      @include font_white_16;
+    }
+  }
+}
+
+.Item {
+  padding: sp.$small sp.$medium;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: c.$black;
+  position: relative;
+  transition: all 0.25s;
+  @include font_white_16();
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: c.$white;
+    @include font_black_16();
+
+    .Dropdown {
+      display: flex;
+      animation: Fade 0.25s linear;
+    }
+  }
+}
+
+.Dropdown {
+  position: absolute;
+  overflow-x: hidden;
+  background: c.$black;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  flex-direction: column;
+  width: 300px;
+}
+
+.Link {
+  @include font_white_16();
+  text-decoration: none;
+  padding: sp.$extra_small sp.$mid_small;
+  background: c.$black;
+
+  &:hover {
+    background: c.$white;
+    color: c.$black;
+  }
+}
+
+@keyframes Fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Loading_Horizontal {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes Loading_Vertical {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Item {
+    padding: sp.$small sp.$mid_small;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .NavBar {
+    display: none;
+  }
+}

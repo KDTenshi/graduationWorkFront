@@ -1,0 +1,81 @@
+.SideBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40vw;
+  min-width: 300px;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+.SideBar_hidden {
+  right: -100%;
+  display: none;
+}
+
+.Button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.Links {
+  width: 100%;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+.Link::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Link::selection {
+  background: #fff;
+  color: #000;
+}
+.Link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  bottom: -5px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.25s;
+}
+.Link:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media screen and (1000px < width) {
+  .SideBar {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .SideBar {
+    width: auto;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .SideBar_hidden {
+    top: -100%;
+  }
+}/*# sourceMappingURL=SideBar.module.css.map */

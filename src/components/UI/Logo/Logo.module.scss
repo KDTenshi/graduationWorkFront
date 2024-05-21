@@ -1,0 +1,29 @@
+@use "../../../styles/variables/colors" as c;
+
+@import "../../../styles/variables/mixins";
+
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  & h1 {
+    @include font_black_36(900);
+    text-transform: uppercase;
+  }
+
+  &_White {
+    & h1 {
+      color: c.$white;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Logo {
+    & h1 {
+      display: none;
+    }
+  }
+}
