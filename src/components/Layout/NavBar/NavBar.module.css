@@ -12,6 +12,31 @@
 }
 .NavBar_Vertical .Item {
   display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.NavBar_Vertical .Item::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.NavBar_Vertical .Item::selection {
+  background: #fff;
+  color: #000;
+}
+.NavBar_Vertical .Item:hover, .NavBar_Vertical .Item:focus, .NavBar_Vertical .Item:active {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.NavBar_Vertical .Item:hover::-moz-selection, .NavBar_Vertical .Item:focus::-moz-selection, .NavBar_Vertical .Item:active::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.NavBar_Vertical .Item:hover::selection, .NavBar_Vertical .Item:focus::selection, .NavBar_Vertical .Item:active::selection {
+  background: #000;
+  color: #fff;
 }
 
 .NavBarSkeleton {
@@ -58,7 +83,6 @@
 .Item {
   padding: 10px 25px;
   text-decoration: none;
-  text-transform: uppercase;
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -67,29 +91,34 @@
   background: #000;
   position: relative;
   transition: all 0.25s;
+}
+.Item p {
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
-.Item::-moz-selection {
+.Item p::-moz-selection {
   background: #fff;
   color: #000;
 }
-.Item::selection {
+.Item p::selection {
   background: #fff;
   color: #000;
 }
 .Item:hover, .Item:focus, .Item:active {
   background: #fff;
+}
+.Item:hover p, .Item:focus p, .Item:active p {
   font-size: 16px;
   font-weight: 400;
   color: #000;
 }
-.Item:hover::-moz-selection, .Item:focus::-moz-selection, .Item:active::-moz-selection {
+.Item:hover p::-moz-selection, .Item:focus p::-moz-selection, .Item:active p::-moz-selection {
   background: #000;
   color: #fff;
 }
-.Item:hover::selection, .Item:focus::selection, .Item:active::selection {
+.Item:hover p::selection, .Item:focus p::selection, .Item:active p::selection {
   background: #000;
   color: #fff;
 }

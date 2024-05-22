@@ -17,6 +17,14 @@
 
     .Item {
       display: block;
+      text-transform: uppercase;
+      @include font_white_16();
+
+      &:hover,
+      &:focus,
+      &:active {
+        @include font_black_16();
+      }
     }
   }
 }
@@ -51,7 +59,7 @@
     }
 
     & p {
-      @include font_white_16;
+      @include font_white_16();
     }
   }
 }
@@ -59,7 +67,6 @@
 .Item {
   padding: sp.$small sp.$medium;
   text-decoration: none;
-  text-transform: uppercase;
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -68,13 +75,20 @@
   background: c.$black;
   position: relative;
   transition: all 0.25s;
-  @include font_white_16();
+
+  & p {
+    text-transform: uppercase;
+    @include font_white_16();
+  }
 
   &:hover,
   &:focus,
   &:active {
     background: c.$white;
-    @include font_black_16();
+
+    & p {
+      @include font_black_16();
+    }
 
     .Dropdown {
       display: flex;
