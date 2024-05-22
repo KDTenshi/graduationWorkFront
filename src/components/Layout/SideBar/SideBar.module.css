@@ -6,8 +6,8 @@
   width: 40vw;
   min-width: 300px;
   background: #000;
-  display: flex;
-  align-items: center;
+  padding: 25vh 0;
+  overflow: scroll;
 }
 .SideBar_hidden {
   right: -100%;

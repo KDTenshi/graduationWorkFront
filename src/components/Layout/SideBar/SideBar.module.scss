@@ -11,8 +11,8 @@
   width: 40vw;
   min-width: 300px;
   background: c.$black;
-  display: flex;
-  align-items: center;
+  padding: 25vh 0;
+  overflow: scroll;
 
   &_hidden {
     right: -100%;
