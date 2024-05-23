@@ -27,7 +27,7 @@ const Header: FC = () => {
             +7(8332)45-16-46
           </Link>
         </div>
-        <button className={st.Burger} onClick={() => setIsMenuShown(!isMenuShown)}>
+        <button className={st.Burger} onClick={() => setIsMenuShown(true)}>
           <Image src={Burger} alt="Burger" />
         </button>
       </div>
