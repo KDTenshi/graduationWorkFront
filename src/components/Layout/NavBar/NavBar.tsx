@@ -1,70 +1,13 @@
 import { FC } from "react";
 import st from "./NavBar.module.css";
 import Link from "next/link";
+import { sections } from "@/Fakeserver";
 
 interface NavBarProps {
   direction?: "vertical" | "horizontal";
 }
 
 const NavBar: FC<NavBarProps> = ({ direction = "horizontal" }) => {
-  const sections = [
-    {
-      id: 0,
-      title: "Хоккейные коробки",
-      categories: [
-        "Хоккейные корты",
-        "Спортивный инвентарь",
-        "Трибунный инвентарь",
-        "Раздевалки",
-        "Листовой стеклопластик",
-      ],
-    },
-    {
-      id: 1,
-      title: "Скейт-парки",
-      categories: [
-        "Хоккейные корты",
-        "Спортивный инвентарь",
-        "Трибунный инвентарь",
-        "Раздевалки",
-        "Листовой стеклопластик",
-      ],
-    },
-    {
-      id: 2,
-      title: "Уличное оборудование",
-      categories: [
-        "Хоккейные корты",
-        "Спортивный инвентарь",
-        "Трибунный инвентарь",
-        "Раздевалки",
-        "Листовой стеклопластик",
-      ],
-    },
-    {
-      id: 3,
-      title: "Покрытия",
-      categories: [
-        "Хоккейные корты",
-        "Спортивный инвентарь",
-        "Трибунный инвентарь",
-        "Раздевалки",
-        "Листовой стеклопластик",
-      ],
-    },
-    {
-      id: 4,
-      title: "Услуги",
-      categories: [
-        "Хоккейные корты",
-        "Спортивный инвентарь",
-        "Трибунный инвентарь",
-        "Раздевалки",
-        "Листовой стеклопластик",
-      ],
-    },
-  ];
-
   if (direction === "vertical") {
     return (
       <nav className={st.NavBar_Vertical}>

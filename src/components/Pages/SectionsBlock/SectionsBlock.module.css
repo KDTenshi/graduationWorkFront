@@ -1,0 +1,62 @@
+.Sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1600px;
+  margin: 50px auto;
+  gap: 10px;
+  padding: 0 75px;
+}
+
+.Section {
+  background: #000;
+  min-height: 200px;
+  position: relative;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+.Section p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+.Section p::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Section p::selection {
+  background: #fff;
+  color: #000;
+}
+.Section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .Sections {
+    padding: 0 25px;
+  }
+  .Section {
+    min-height: 150px;
+  }
+  .Section p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Section p::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Section p::selection {
+    background: #fff;
+    color: #000;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Sections {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=SectionsBlock.module.css.map */
