@@ -4,7 +4,7 @@ import st from "./Banner.module.css";
 const Banner: FC = () => {
   return (
     <div className={st.Banner}>
-      <video autoPlay muted loop poster="/banner_prev.png">
+      <video autoPlay muted loop>
         <source src="/banner.mp4" type="video/mp4" />
       </video>
       <div className={st.Info}>
