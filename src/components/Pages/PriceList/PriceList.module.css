@@ -1,0 +1,180 @@
+.PriceList {
+  width: 100%;
+  background: #000;
+  padding: 35px 75px;
+}
+.PriceList h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.PriceList h2::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.PriceList h2::selection {
+  background: #fff;
+  color: #000;
+}
+.PriceList form {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 600px;
+  gap: 15px;
+  align-items: center;
+}
+.PriceList form input {
+  width: 100%;
+  border: 2px solid #000;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  padding: 10px 15px;
+  outline: 0;
+}
+.PriceList form input::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.PriceList form input::selection {
+  background: #000;
+  color: #fff;
+}
+.PriceList form button {
+  border: 2px solid #fff;
+  background: #000;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.PriceList form button::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.PriceList form button::selection {
+  background: #fff;
+  color: #000;
+}
+.PriceList form button:hover {
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.PriceList form button:hover::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.PriceList form button:hover::selection {
+  background: #000;
+  color: #fff;
+}
+.PriceList form p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  width: 75%;
+}
+.PriceList form p::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.PriceList form p::selection {
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .PriceList {
+    padding: 35px 50px;
+  }
+  .PriceList form {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .PriceList h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .PriceList h2::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .PriceList h2::selection {
+    background: #fff;
+    color: #000;
+  }
+  .PriceList form {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
+  .PriceList form::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .PriceList form::selection {
+    background: #000;
+    color: #fff;
+  }
+  .PriceList button {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .PriceList button::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .PriceList button::selection {
+    background: #fff;
+    color: #000;
+  }
+  .PriceList button:hover {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
+  .PriceList button:hover::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .PriceList button:hover::selection {
+    background: #000;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 500px) {
+  .PriceList {
+    padding: 35px 25px;
+  }
+  .PriceList h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .PriceList h2::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .PriceList h2::selection {
+    background: #fff;
+    color: #000;
+  }
+  .PriceList form p {
+    width: 100%;
+  }
+}/*# sourceMappingURL=PriceList.module.css.map */
