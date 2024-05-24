@@ -56,6 +56,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .Header {
+    border-bottom: sp.$extra_small solid c.$black;
+  }
   .Links {
     display: none;
   }

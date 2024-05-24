@@ -20,6 +20,10 @@
   @include font_black(12px, $weight);
 }
 
+@mixin font_black_14($weight: 400) {
+  @include font_black(14px, $weight);
+}
+
 @mixin font_black_16($weight: 400) {
   @include font_black(16px, $weight);
 }
@@ -55,6 +59,10 @@
 
 @mixin font_white_12($weight: 400) {
   @include font_white(12px, $weight);
+}
+
+@mixin font_white_14($weight: 400) {
+  @include font_white(14px, $weight);
 }
 
 @mixin font_white_16($weight: 400) {

@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { sections } from "@/Fakeserver";
-import st from "./SectionsBlock.module.css";
+import st from "./Sections.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-const SectionsBlock: FC = () => {
+const Sections: FC = () => {
   return (
     <div className={st.Sections}>
       {sections.map((section) => (
@@ -17,4 +17,4 @@ const SectionsBlock: FC = () => {
   );
 };
 
-export default SectionsBlock;
+export default Sections;

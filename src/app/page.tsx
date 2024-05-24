@@ -1,14 +1,16 @@
 import Banner from "@/components/Pages/Banner/Banner";
-import SectionsBlock from "@/components/Pages/SectionsBlock/SectionsBlock";
+import Benefits from "@/components/Pages/Benefits/Benefits";
+import Sections from "@/components/Pages/Sections/Sections";
 import { FC } from "react";
 
-const Home: FC = () => {
+const HomePage: FC = () => {
   return (
     <main>
       <Banner />
-      <SectionsBlock />
+      <Sections />
+      <Benefits />
     </main>
   );
 };
 
-export default Home;
+export default HomePage;

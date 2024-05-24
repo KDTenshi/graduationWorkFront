@@ -20,26 +20,11 @@
   bottom: 75px;
   left: 125px;
 }
-.Info h1 {
+.Info h2 {
   font-size: 64px;
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
-}
-.Info h1::-moz-selection {
-  background: #fff;
-  color: #000;
-}
-.Info h1::selection {
-  background: #fff;
-  color: #000;
-}
-.Info h2 {
-  font-size: 36px;
-  font-weight: 400;
-  color: #fff;
-  padding-left: 15px;
-  max-width: 50vw;
 }
 .Info h2::-moz-selection {
   background: #fff;
@@ -49,28 +34,30 @@
   background: #fff;
   color: #000;
 }
+.Info h3 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 15px;
+  max-width: 50vw;
+}
+.Info h3::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Info h3::selection {
+  background: #fff;
+  color: #000;
+}
 
 @media screen and (max-width: 1280px) {
   .Info {
     left: 75px;
     bottom: 125px;
   }
-  .Info h1 {
+  .Info h2 {
     font-size: 48px;
     font-weight: 900;
-    color: #fff;
-  }
-  .Info h1::-moz-selection {
-    background: #fff;
-    color: #000;
-  }
-  .Info h1::selection {
-    background: #fff;
-    color: #000;
-  }
-  .Info h2 {
-    font-size: 30px;
-    font-weight: 400;
     color: #fff;
   }
   .Info h2::-moz-selection {
@@ -81,9 +68,22 @@
     background: #fff;
     color: #000;
   }
+  .Info h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Info h3::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Info h3::selection {
+    background: #fff;
+    color: #000;
+  }
 }
 @media screen and (max-width: 1000px) {
-  .Info h2 {
+  .Info h3 {
     max-width: 75vw;
   }
 }
@@ -92,23 +92,9 @@
     left: 50px;
     bottom: 75px;
   }
-  .Info h1 {
+  .Info h2 {
     font-size: 36px;
     font-weight: 900;
-    color: #fff;
-  }
-  .Info h1::-moz-selection {
-    background: #fff;
-    color: #000;
-  }
-  .Info h1::selection {
-    background: #fff;
-    color: #000;
-  }
-  .Info h2 {
-    max-width: 100%;
-    font-size: 24px;
-    font-weight: 400;
     color: #fff;
   }
   .Info h2::-moz-selection {
@@ -116,6 +102,20 @@
     color: #000;
   }
   .Info h2::selection {
+    background: #fff;
+    color: #000;
+  }
+  .Info h3 {
+    max-width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Info h3::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Info h3::selection {
     background: #fff;
     color: #000;
   }

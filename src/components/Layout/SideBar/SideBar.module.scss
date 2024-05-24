@@ -51,13 +51,14 @@
 @media screen and (max-width: 500px) {
   .SideBar {
     width: auto;
-    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    overscroll-behavior: contain;
 
     &_hidden {
-      top: -100%;
+      bottom: 100%;
     }
   }
 }

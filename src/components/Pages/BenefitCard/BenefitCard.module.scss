@@ -1,0 +1,76 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Card {
+  padding: sp.$small sp.$mid_small;
+  position: relative;
+  transition: all 0.25s;
+  border: 2px solid c.$black;
+
+  & h3 {
+    margin-bottom: sp.$small;
+  }
+
+  & img {
+    position: absolute;
+  }
+
+  &:nth-child(odd) {
+    background: c.$white;
+    border-radius: sp.$mid_small 0;
+    padding-bottom: sp.$ultra_large;
+
+    & h3 {
+      @include font_black_20(700);
+    }
+
+    & p {
+      @include font_black_16();
+    }
+  }
+
+  &:nth-child(even) {
+    background: c.$black;
+    padding-top: sp.$ultra_large;
+    border-radius: 0 sp.$mid_small;
+    text-align: right;
+
+    & h3 {
+      @include font_white_20(700);
+    }
+
+    & p {
+      @include font_white_16();
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px c.$black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Card {
+    &:nth-child(odd) {
+      & h3 {
+        @include font_black_16(700);
+      }
+
+      & p {
+        @include font_black_14();
+      }
+    }
+
+    &:nth-child(even) {
+      & h3 {
+        @include font_white_16(700);
+      }
+
+      & p {
+        @include font_white_14();
+      }
+    }
+  }
+}

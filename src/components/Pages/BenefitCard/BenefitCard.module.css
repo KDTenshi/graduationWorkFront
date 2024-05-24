@@ -1,0 +1,133 @@
+.Card {
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.25s;
+  border: 2px solid #000;
+}
+.Card h3 {
+  margin-bottom: 10px;
+}
+.Card img {
+  position: absolute;
+}
+.Card:nth-child(odd) {
+  background: #fff;
+  border-radius: 15px 0;
+  padding-bottom: 125px;
+}
+.Card:nth-child(odd) h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.Card:nth-child(odd) h3::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Card:nth-child(odd) h3::selection {
+  background: #000;
+  color: #fff;
+}
+.Card:nth-child(odd) p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.Card:nth-child(odd) p::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Card:nth-child(odd) p::selection {
+  background: #000;
+  color: #fff;
+}
+.Card:nth-child(even) {
+  background: #000;
+  padding-top: 125px;
+  border-radius: 0 15px;
+  text-align: right;
+}
+.Card:nth-child(even) h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.Card:nth-child(even) h3::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Card:nth-child(even) h3::selection {
+  background: #fff;
+  color: #000;
+}
+.Card:nth-child(even) p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.Card:nth-child(even) p::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Card:nth-child(even) p::selection {
+  background: #fff;
+  color: #000;
+}
+.Card:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+@media screen and (max-width: 600px) {
+  .Card:nth-child(odd) h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+  .Card:nth-child(odd) h3::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .Card:nth-child(odd) h3::selection {
+    background: #000;
+    color: #fff;
+  }
+  .Card:nth-child(odd) p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
+  .Card:nth-child(odd) p::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .Card:nth-child(odd) p::selection {
+    background: #000;
+    color: #fff;
+  }
+  .Card:nth-child(even) h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .Card:nth-child(even) h3::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Card:nth-child(even) h3::selection {
+    background: #fff;
+    color: #000;
+  }
+  .Card:nth-child(even) p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Card:nth-child(even) p::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Card:nth-child(even) p::selection {
+    background: #fff;
+    color: #000;
+  }
+}/*# sourceMappingURL=BenefitCard.module.css.map */

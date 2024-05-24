@@ -1,0 +1,55 @@
+.Benefits {
+  width: 90vw;
+  max-width: 1600px;
+  margin: 50px auto;
+}
+.Benefits h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.Benefits h2::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Benefits h2::selection {
+  background: #000;
+  color: #fff;
+}
+
+.Wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 15px 25px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1450px) {
+  .Wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .Benefits h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+  .Benefits h2::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .Benefits h2::selection {
+    background: #000;
+    color: #fff;
+  }
+  .Wrap {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Wrap {
+    padding: 15px 15px;
+  }
+}/*# sourceMappingURL=Benefits.module.css.map */

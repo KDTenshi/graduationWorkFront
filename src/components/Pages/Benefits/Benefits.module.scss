@@ -1,0 +1,45 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Benefits {
+  width: 90vw;
+  max-width: 1600px;
+  margin: sp.$large auto;
+
+  & h2 {
+    @include font_black_36(700);
+    text-transform: uppercase;
+  }
+}
+
+.Wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: sp.$mid_small sp.$medium;
+  gap: sp.$small;
+}
+
+@media screen and (max-width: 1450px) {
+  .Wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Benefits {
+    & h2 {
+      @include font_black_24(700);
+    }
+  }
+  .Wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Wrap {
+    padding: sp.$mid_small sp.$mid_small;
+  }
+}
