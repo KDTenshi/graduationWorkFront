@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .PriceList {
     & h2 {
       @include font_white_30(700);

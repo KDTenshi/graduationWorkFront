@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: c.$white;
 }
 
 .Logo {
@@ -40,13 +41,6 @@
   cursor: pointer;
   background: none;
   border: 0;
-
-  &:hover {
-    .SideBar {
-      display: block !important;
-      right: 0 !important;
-    }
-  }
 }
 
 @media screen and (max-width: 1100px) {

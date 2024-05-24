@@ -1,0 +1,75 @@
+.Sertificates {
+  width: 90vw;
+  margin: 50px auto;
+  padding: 15px 25px;
+}
+.Sertificates h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.Sertificates h2::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Sertificates h2::selection {
+  background: #000;
+  color: #fff;
+}
+
+.Wrap {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.Image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .Wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .Sertificates h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+  }
+  .Sertificates h2::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .Sertificates h2::selection {
+    background: #000;
+    color: #fff;
+  }
+  .Wrap {
+    grid-template-columns: 1fr;
+  }
+  .Image img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Image img {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Image img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Sertificates.module.css.map */

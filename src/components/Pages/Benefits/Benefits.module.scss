@@ -30,7 +30,7 @@
 @media screen and (max-width: 800px) {
   .Benefits {
     & h2 {
-      @include font_black_24(700);
+      @include font_black_30(700);
     }
   }
   .Wrap {
