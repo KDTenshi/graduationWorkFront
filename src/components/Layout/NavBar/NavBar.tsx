@@ -16,7 +16,7 @@ const NavBar: FC<NavBarProps> = ({ direction = "horizontal" }) => {
             {section.title}
           </Link>
         ))}
-        <Link className={st.Item} href={"/"}>
+        <Link className={st.Item} href={"/about"}>
           О нас
         </Link>
         <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Item}>
@@ -43,9 +43,9 @@ const NavBar: FC<NavBarProps> = ({ direction = "horizontal" }) => {
           </div>
         </div>
       ))}
-      <div className={st.Item}>
-        <p>О нас</p>
-      </div>
+      <Link href={"/about"} className={st.About}>
+        О нас
+      </Link>
     </nav>
   );
 };

@@ -97,6 +97,24 @@
   }
 }
 
+.About {
+  height: inherit;
+  padding: 0 sp.$medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: c.$black;
+  @include font_white_16();
+  text-transform: uppercase;
+  transition: all 0.25s;
+  text-decoration: none;
+
+  &:hover {
+    background: c.$white;
+    @include font_black_16();
+  }
+}
+
 .Dropdown {
   position: absolute;
   overflow-x: hidden;
