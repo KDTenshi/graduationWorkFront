@@ -9,32 +9,24 @@ import Burger from "/public/burger.svg";
 import Image from "next/image";
 import SideBar from "../SideBar/SideBar";
 import NavBarSkeleton from "../NavBar/NavBarSkeleton";
+import Links from "./Parts/Links";
 
 const Header: FC = () => {
-  const [isMenuShown, setIsMenuShown] = useState(false);
+  const [sideBarShown, setSideBarShown] = useState(false);
 
   return (
     <header className={st.Header}>
       <div className={st.Wrap}>
-        <Link href={"/"} className={st.Logo}>
-          <Logo />
-        </Link>
-        <div className={st.Links}>
-          <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Link} target="_blank">
-            sales@alfagroup-sport.ru
-          </Link>
-          <Link href={"tel:+78332451646"} className={st.Link} target="_blank">
-            +7(8332)45-16-46
-          </Link>
-        </div>
-        <button className={st.Burger} onClick={() => setIsMenuShown(true)}>
+        <Logo />
+        <Links />
+        <button className={st.Burger} onClick={() => setSideBarShown(!sideBarShown)}>
           <Image src={Burger} alt="Burger" />
         </button>
+        <SideBar isShown={sideBarShown} />
       </div>
       <Suspense fallback={<NavBarSkeleton />}>
         <NavBar />
       </Suspense>
-      <SideBar isShown={isMenuShown} setIsShown={setIsMenuShown} />
     </header>
   );
 };

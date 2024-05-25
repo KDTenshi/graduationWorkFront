@@ -3,6 +3,8 @@ import st from "./Footer.module.css";
 import Link from "next/link";
 import Logo from "@/components/UI/Logo/Logo";
 import { categories } from "@/Fakeserver";
+import MailLink from "@/components/UI/MailLink/MailLink";
+import PhoneLink from "@/components/UI/PhoneLink/PhoneLink";
 
 const Footer: FC = () => {
   return (
@@ -13,14 +15,10 @@ const Footer: FC = () => {
             <Logo color="white" />
           </Link>
           <p>
-            <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Contact} target="_blank">
-              sales@alfagroup-sport.ru
-            </Link>
+            <MailLink className={st.Contact} />
           </p>
           <p>
-            <Link href={"tel:+78332451646"} className={st.Contact} target="_blank">
-              +7(8332)45-16-46
-            </Link>
+            <PhoneLink className={st.Contact} />
           </p>
         </div>
         <div className={st.Links}>

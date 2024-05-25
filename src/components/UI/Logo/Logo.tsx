@@ -3,6 +3,7 @@ import st from "./Logo.module.css";
 import LogoBlack from "/public/logo_black.svg";
 import LogoWhite from "/public/logo_white.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 interface LogoProps {
   color?: "black" | "white";
@@ -20,10 +21,10 @@ const Logo: FC<LogoProps> = ({ color = "black", size = "big" }) => {
   }
 
   return (
-    <div className={st.Logo}>
+    <Link className={st.Logo} href={"/"}>
       <Image src={LogoBlack} alt="Logo" />
       {size === "big" && <h1>Альфа групп</h1>}
-    </div>
+    </Link>
   );
 };
 

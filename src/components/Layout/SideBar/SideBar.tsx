@@ -7,22 +7,12 @@ import NavBarSkeleton from "../NavBar/NavBarSkeleton";
 
 interface SideBarProps {
   isShown: boolean;
-  setIsShown: Dispatch<SetStateAction<boolean>>;
 }
 
-const SideBar: FC<SideBarProps> = ({ isShown = false, setIsShown }) => {
-  const hideSideBar = (e: MouseEvent<HTMLDivElement>) => {
-    const target = e.target as HTMLElement;
-    const isTargeted = target.classList.contains(st.SideBar);
-
-    if (!isTargeted) {
-      setIsShown(false);
-    }
-  };
-
+const SideBar: FC<SideBarProps> = ({ isShown }) => {
   return (
-    <div className={isShown ? st.SideBar : [st.SideBar, st.SideBar_hidden].join(" ")} onClick={hideSideBar}>
-      <button onClick={() => setIsShown(false)} className={st.Button}>
+    <div className={isShown ? st.SideBar : st.SideBar_Hidden}>
+      <button className={st.Button}>
         <Image src={Cross} alt="Cross" />
       </button>
       <Suspense fallback={<NavBarSkeleton direction="vertical" />}>

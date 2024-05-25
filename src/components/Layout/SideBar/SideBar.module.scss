@@ -4,18 +4,17 @@
 @import "../../../styles/variables/mixins";
 
 .SideBar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: absolute;
+  top: 100%;
   right: 0;
+  height: 100vh;
   width: 40vw;
   min-width: 300px;
   background: c.$black;
-  padding: 25vh 0;
   overflow: scroll;
+  overscroll-behavior: contain;
 
-  &_hidden {
-    right: -100%;
+  &_Hidden {
     display: none;
   }
 }
@@ -50,15 +49,9 @@
 
 @media screen and (max-width: 500px) {
   .SideBar {
-    width: auto;
-    top: 0;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
-    overscroll-behavior: contain;
-
-    &_hidden {
-      bottom: 100%;
-    }
+    width: auto;
   }
 }

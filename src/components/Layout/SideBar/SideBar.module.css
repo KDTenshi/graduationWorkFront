@@ -1,16 +1,15 @@
 .SideBar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: absolute;
+  top: 100%;
   right: 0;
+  height: 100vh;
   width: 40vw;
   min-width: 300px;
   background: #000;
-  padding: 25vh 0;
   overflow: scroll;
+  overscroll-behavior: contain;
 }
-.SideBar_hidden {
-  right: -100%;
+.SideBar_Hidden {
   display: none;
 }
 
@@ -69,14 +68,9 @@
 }
 @media screen and (max-width: 500px) {
   .SideBar {
-    width: auto;
-    top: 0;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
-    overscroll-behavior: contain;
-  }
-  .SideBar_hidden {
-    bottom: 100%;
+    width: auto;
   }
 }/*# sourceMappingURL=SideBar.module.css.map */
