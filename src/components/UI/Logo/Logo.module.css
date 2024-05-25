@@ -19,7 +19,17 @@
   color: #fff;
 }
 .Logo_White h1 {
+  font-size: 36px;
+  font-weight: 900;
   color: #fff;
+}
+.Logo_White h1::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Logo_White h1::selection {
+  background: #fff;
+  color: #000;
 }
 
 @media screen and (max-width: 800px) {

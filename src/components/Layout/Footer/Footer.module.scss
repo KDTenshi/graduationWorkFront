@@ -1,0 +1,147 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Footer {
+  background: c.$black;
+  padding: sp.$large sp.$extra_large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: sp.$large;
+}
+
+.Wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: sp.$extra_large;
+}
+
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  gap: sp.$small;
+}
+
+.Logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+}
+
+.Contact {
+  @include font_white_16();
+  @include link_white();
+}
+
+.Links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: sp.$small;
+
+  & p {
+    text-align: center;
+  }
+}
+
+.Link {
+  @include font_white_12();
+  @include link_white();
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  gap: sp.$small;
+
+  & p {
+    @include font_white_16();
+    text-align: right;
+  }
+}
+
+.Policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & a {
+    @include font_white_16();
+    @include link_white();
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Links {
+    grid-template-columns: repeat(2, 1fr);
+
+    & p {
+      &:nth-child(odd) {
+        text-align: left;
+      }
+
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .Links {
+    grid-template-columns: 1fr;
+
+    & p {
+      &:nth-child(odd) {
+        text-align: center;
+      }
+
+      &:nth-child(even) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Wrap {
+    gap: sp.$large;
+  }
+
+  .Links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Logo {
+    justify-content: center;
+  }
+
+  .Contacts {
+    & p {
+      text-align: center;
+    }
+  }
+
+  .Info {
+    & p {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Policy {
+    & a {
+      @include font_white_12();
+    }
+  }
+}

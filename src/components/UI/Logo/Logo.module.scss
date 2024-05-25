@@ -15,7 +15,7 @@
 
   &_White {
     & h1 {
-      color: c.$white;
+      @include font_white_36(900);
     }
   }
 }

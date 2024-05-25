@@ -1,0 +1,215 @@
+.Footer {
+  background: #000;
+  padding: 50px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.Wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+}
+
+.Contact {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.Contact::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Contact::selection {
+  background: #fff;
+  color: #000;
+}
+.Contact::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  bottom: -5px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.25s;
+}
+.Contact:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.Links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.Links p {
+  text-align: center;
+}
+
+.Link {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.Link::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Link::selection {
+  background: #fff;
+  color: #000;
+}
+.Link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  bottom: -5px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.25s;
+}
+.Link:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: right;
+}
+.Info p::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Info p::selection {
+  background: #fff;
+  color: #000;
+}
+
+.Policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Policy a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.Policy a::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Policy a::selection {
+  background: #fff;
+  color: #000;
+}
+.Policy a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  bottom: -5px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.25s;
+}
+.Policy a:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+  .Links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Links p:nth-child(odd) {
+    text-align: left;
+  }
+  .Links p:nth-child(even) {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .Links {
+    grid-template-columns: 1fr;
+  }
+  .Links p:nth-child(odd) {
+    text-align: center;
+  }
+  .Links p:nth-child(even) {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Wrap {
+    gap: 50px;
+  }
+  .Links {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Logo {
+    justify-content: center;
+  }
+  .Contacts p {
+    text-align: center;
+  }
+  .Info p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Policy a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Policy a::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Policy a::selection {
+    background: #fff;
+    color: #000;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */
