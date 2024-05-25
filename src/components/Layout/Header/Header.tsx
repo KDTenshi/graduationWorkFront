@@ -20,10 +20,10 @@ const Header: FC = () => {
           <Logo />
         </Link>
         <div className={st.Links}>
-          <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Link}>
+          <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Link} target="_blank">
             sales@alfagroup-sport.ru
           </Link>
-          <Link href={"tel:+78332451646"} className={st.Link}>
+          <Link href={"tel:+78332451646"} className={st.Link} target="_blank">
             +7(8332)45-16-46
           </Link>
         </div>

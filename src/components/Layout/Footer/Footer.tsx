@@ -13,12 +13,12 @@ const Footer: FC = () => {
             <Logo color="white" />
           </Link>
           <p>
-            <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Contact}>
+            <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Contact} target="_blank">
               sales@alfagroup-sport.ru
             </Link>
           </p>
           <p>
-            <Link href={"tel:+78332451646"} className={st.Contact}>
+            <Link href={"tel:+78332451646"} className={st.Contact} target="_blank">
               +7(8332)45-16-46
             </Link>
           </p>

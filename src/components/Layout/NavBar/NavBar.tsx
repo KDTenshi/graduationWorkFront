@@ -19,10 +19,10 @@ const NavBar: FC<NavBarProps> = ({ direction = "horizontal" }) => {
         <Link className={st.Item} href={"/about"}>
           О нас
         </Link>
-        <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Item}>
+        <Link href={"mailto:sales@alfagroup-sport.ru"} className={st.Item} target="_blank">
           sales@alfagroup-sport.ru
         </Link>
-        <Link href={"tel:+78332451646"} className={st.Item}>
+        <Link href={"tel:+78332451646"} className={st.Item} target="_blank">
           +7(8332)45-16-46
         </Link>
       </nav>
