@@ -12,9 +12,6 @@ interface SideBarProps {
 const SideBar: FC<SideBarProps> = ({ isShown }) => {
   return (
     <div className={isShown ? st.SideBar : st.SideBar_Hidden}>
-      <button className={st.Button}>
-        <Image src={Cross} alt="Cross" />
-      </button>
       <Suspense fallback={<NavBarSkeleton direction="vertical" />}>
         <NavBar direction="vertical" />
       </Suspense>

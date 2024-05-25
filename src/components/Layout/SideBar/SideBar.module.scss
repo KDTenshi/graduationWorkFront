@@ -7,25 +7,18 @@
   position: absolute;
   top: 100%;
   right: 0;
-  height: 100vh;
+  padding: 10vh 0;
+  height: calc(100vh - 80px);
   width: 40vw;
   min-width: 300px;
   background: c.$black;
-  overflow: scroll;
+  overflow-y: auto !important;
   overscroll-behavior: contain;
+  opacity: 0.9;
 
   &_Hidden {
     display: none;
   }
-}
-
-.Button {
-  position: absolute;
-  top: sp.$mid_small;
-  right: sp.$mid_small;
-  cursor: pointer;
-  border: 0;
-  background: none;
 }
 
 .Links {
