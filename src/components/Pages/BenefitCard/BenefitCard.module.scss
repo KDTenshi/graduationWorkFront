@@ -29,6 +29,11 @@
     & p {
       @include font_black_16();
     }
+
+    & img {
+      bottom: sp.$small;
+      right: sp.$small;
+    }
   }
 
   &:nth-child(even) {
@@ -43,6 +48,12 @@
 
     & p {
       @include font_white_16();
+    }
+
+    & img {
+      top: sp.$small;
+      left: sp.$small;
+      filter: invert(1);
     }
   }
 
