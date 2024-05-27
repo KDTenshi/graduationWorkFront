@@ -64,7 +64,7 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .Image img {
+  .Slide img {
     width: 75%;
   }
   .Reviews h2 {
@@ -81,8 +81,8 @@
     color: #fff;
   }
 }
-@media screen and (max-width: 450px) {
-  .Reviews img {
+@media screen and (max-width: 600px) {
+  .Slide img {
     width: 100%;
   }
 }/*# sourceMappingURL=ReviewsSlider.module.css.map */
