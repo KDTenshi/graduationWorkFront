@@ -1,0 +1,134 @@
+.Projects {
+  width: 90vw;
+  max-width: 1600px;
+  margin: 50px auto;
+}
+.Projects h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.Projects h2::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Projects h2::selection {
+  background: #000;
+  color: #fff;
+}
+
+.Slider {
+  width: 90%;
+  margin: 25px auto;
+  position: relative;
+}
+
+.Button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: all 0.25s;
+}
+.Button:hover {
+  filter: invert(1);
+}
+.Button_Next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+.Button_Prev {
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.Slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.Slide a {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 2px solid #000;
+}
+.Slide a p {
+  position: absolute;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  z-index: 10;
+  padding: 10px 15px;
+}
+.Slide a p::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Slide a p::selection {
+  background: #000;
+  color: #fff;
+}
+.Slide a p:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom-right-radius: 10px;
+}
+.Slide a p:nth-child(2) {
+  right: 0;
+  bottom: 0;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-top-left-radius: 10px;
+}
+.Slide a img {
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .Slide img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Slide img {
+    width: 75%;
+  }
+  .Projects h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+  }
+  .Projects h2::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .Projects h2::selection {
+    background: #000;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Slide img {
+    width: 100%;
+  }
+  .Button {
+    display: none;
+  }
+}/*# sourceMappingURL=Projects.module.css.map */

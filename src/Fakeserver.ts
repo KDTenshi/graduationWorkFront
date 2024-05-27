@@ -160,3 +160,30 @@ export const reviews = [
     img: "/review_8.webp",
   },
 ];
+
+export const projects = [
+  {
+    place: "Хоккейный корт",
+    title: "Новоаганск",
+    video: "https://youtu.be/MmOV3gIMxJc",
+    preview: "/0.png",
+  },
+  {
+    place: "Хоккейный корт",
+    title: "Кимовск",
+    video: "https://youtu.be/_SCGoN2Agxk",
+    preview: "/1.png",
+  },
+  {
+    place: "Хоккейный корт и спортивная площадка",
+    title: "п.Тюлькино",
+    video: "https://youtu.be/1gmR1k9SGv4",
+    preview: "/2.png",
+  },
+  {
+    place: "Скейт парк",
+    title: "Усть-Илимск",
+    video: "https://youtu.be/DZUOffFKwkQ",
+    preview: "/3.png",
+  },
+];

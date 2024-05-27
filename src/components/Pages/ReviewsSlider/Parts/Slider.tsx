@@ -1,9 +1,14 @@
+"use client";
+
 import { FC } from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import st from "../ReviewsSlider.module.css";
 import SliderButtonPrev from "./SliderButtonPrev";
 import SliderButtonNext from "./SliderButtonNext";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 interface SliderProps {
   reviews: { img: string }[];
