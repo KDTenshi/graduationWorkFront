@@ -30,7 +30,7 @@ const Slider: FC<SliderProps> = ({ projects }) => {
     >
       {projects.map((project) => (
         <SwiperSlide key={project.video} className={st.Slide}>
-          <Link href={project.video}>
+          <Link href={project.video} target="_blank">
             <p>{project.title}</p>
             <p>{project.place}</p>
             <Image src={project.preview} fill={true} alt="Preview" sizes="100%" />
