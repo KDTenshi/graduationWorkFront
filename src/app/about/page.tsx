@@ -1,5 +1,7 @@
 import Banner from "@/components/Pages/Banner/Banner";
 import Benefits from "@/components/Pages/Benefits/Benefits";
+import Projects from "@/components/Pages/Projects/Projects";
+import ReviewsSlider from "@/components/Pages/ReviewsSlider/ReviewsSlider";
 import Sertificates from "@/components/Pages/Sertificates/Sertificates";
 import { Metadata } from "next";
 import { FC } from "react";
@@ -14,6 +16,8 @@ const AboutPage: FC = () => {
       <Banner />
       <Benefits />
       <Sertificates />
+      <ReviewsSlider />
+      <Projects />
     </main>
   );
 };

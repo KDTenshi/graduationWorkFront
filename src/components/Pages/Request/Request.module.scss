@@ -1,0 +1,116 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Request {
+  width: 70vw;
+  background: c.$white;
+  margin: sp.$large auto;
+
+  & h2 {
+    @include font_black_36(700);
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    @include font_black_24(700);
+    padding-left: sp.$mid_small;
+    text-transform: uppercase;
+  }
+
+  & form {
+    padding: sp.$mid_small sp.$medium;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 600px;
+    gap: sp.$mid_small;
+    align-items: center;
+
+    & input {
+      width: 100%;
+      border: 2px solid c.$black;
+      @include font_black_16();
+      padding: sp.$small sp.$mid_small;
+      outline: 0;
+    }
+
+    & button {
+      border: 2px solid c.$black;
+      background: c.$black;
+      @include font_white_16();
+      padding: sp.$small sp.$medium;
+      border-radius: sp.$small;
+      cursor: pointer;
+      transition: all 0.25s;
+
+      &:hover {
+        background: c.$white;
+        @include font_black_16();
+      }
+    }
+
+    & p {
+      @include font_black_12();
+      text-align: center;
+      width: 75%;
+
+      & a {
+        @include font_black_12();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Request {
+    width: 85vw;
+
+    & form {
+      width: 75vw;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Request {
+    & h2 {
+      @include font_black_30(700);
+    }
+    & h3 {
+      @include font_black_20(700);
+    }
+
+    & form {
+      padding: sp.$mid_small;
+      width: 100%;
+      max-width: 100%;
+      @include font_black_14();
+    }
+
+    & button {
+      @include font_white_14();
+
+      &:hover {
+        @include font_black_14();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .PriceList {
+    width: 90vw;
+
+    & h2 {
+      @include font_white_24(700);
+    }
+
+    & form {
+      & p {
+        width: 100%;
+      }
+    }
+  }
+}
