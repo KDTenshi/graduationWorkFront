@@ -1,0 +1,88 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Reviews {
+  width: 90vw;
+  max-width: 1600px;
+  margin: sp.$large auto;
+
+  & h2 {
+    @include font_black_36(700);
+    text-transform: uppercase;
+  }
+}
+
+.Slider {
+  width: 90%;
+  margin: sp.$medium auto;
+  position: relative;
+}
+
+.Button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: c.$white;
+  border: 2px solid c.$black;
+  cursor: pointer;
+  padding: 0 sp.$small;
+  transition: all 0.25s;
+
+  &:hover {
+    filter: invert(1);
+  }
+
+  &_Next {
+    right: 0;
+    border-radius: sp.$small 0 0 sp.$small;
+  }
+
+  &_Prev {
+    left: 0;
+    border-radius: 0 sp.$small sp.$small 0;
+  }
+}
+
+.Slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Slide {
+    & img {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Image {
+    & img {
+      width: 75%;
+    }
+  }
+
+  .Reviews {
+    & h2 {
+      @include font_black_30(700);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Reviews {
+    & img {
+      width: 100%;
+    }
+  }
+}

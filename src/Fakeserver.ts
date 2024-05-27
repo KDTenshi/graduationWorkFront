@@ -133,3 +133,30 @@ export const categories = [
     title: "Ремонт",
   },
 ];
+
+export const reviews = [
+  {
+    img: "/review_1.webp",
+  },
+  {
+    img: "/review_2.webp",
+  },
+  {
+    img: "/review_3.jpg",
+  },
+  {
+    img: "/review_4.jpg",
+  },
+  {
+    img: "/review_5.jpeg",
+  },
+  {
+    img: "/review_6.jpeg",
+  },
+  {
+    img: "/review_7.jpg",
+  },
+  {
+    img: "/review_8.webp",
+  },
+];

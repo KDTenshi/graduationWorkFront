@@ -13,10 +13,10 @@ interface LogoProps {
 const Logo: FC<LogoProps> = ({ color = "black", size = "big" }) => {
   if (color === "white") {
     return (
-      <div className={[st.Logo, st.Logo_White].join(" ")}>
+      <Link className={[st.Logo, st.Logo_White].join(" ")} href={"/"}>
         <Image src={LogoWhite} alt="Logo" />
         {size === "big" && <h1>Альфа групп</h1>}
-      </div>
+      </Link>
     );
   }
 

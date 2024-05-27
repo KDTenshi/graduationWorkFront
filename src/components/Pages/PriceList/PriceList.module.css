@@ -91,6 +91,19 @@
   background: #fff;
   color: #000;
 }
+.PriceList form p a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+.PriceList form p a::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.PriceList form p a::selection {
+  background: #fff;
+  color: #000;
+}
 
 @media screen and (max-width: 1000px) {
   .PriceList {

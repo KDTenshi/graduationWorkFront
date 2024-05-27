@@ -1,5 +1,6 @@
 import { FC } from "react";
 import st from "./PriceList.module.css";
+import Link from "next/link";
 
 const PriceList: FC = () => {
   return (
@@ -11,8 +12,8 @@ const PriceList: FC = () => {
         <input type="text" placeholder="+7(999) 999-99-99" required />
         <button type="submit">Получить прайс</button>
         <p>
-          Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой
-          конфиденциальности.
+          Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с{" "}
+          <Link href={"/"}>политикой конфиденциальности</Link>.
         </p>
       </form>
     </div>

@@ -1,8 +1,6 @@
 import { Dispatch, FC, MouseEvent, MouseEventHandler, SetStateAction, Suspense } from "react";
 import st from "./SideBar.module.css";
 import NavBar from "./../NavBar/NavBar";
-import Cross from "/public/cross.svg";
-import Image from "next/image";
 import NavBarSkeleton from "../NavBar/NavBarSkeleton";
 
 interface SideBarProps {

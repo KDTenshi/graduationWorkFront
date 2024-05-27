@@ -49,6 +49,10 @@
       @include font_white_12();
       text-align: center;
       width: 75%;
+
+      & a {
+        @include font_white_12();
+      }
     }
   }
 }
