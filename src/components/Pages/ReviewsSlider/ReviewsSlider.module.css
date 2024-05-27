@@ -85,4 +85,7 @@
   .Slide img {
     width: 100%;
   }
+  .Button {
+    display: none;
+  }
 }/*# sourceMappingURL=ReviewsSlider.module.css.map */
