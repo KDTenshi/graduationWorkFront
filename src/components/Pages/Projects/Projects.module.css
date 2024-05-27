@@ -78,18 +78,20 @@
   color: #fff;
 }
 .Slide a p:nth-child(1) {
-  top: 0;
+  bottom: 0;
   left: 0;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
   border-right: 2px solid #000;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 50%;
 }
 .Slide a p:nth-child(2) {
+  top: 0;
   right: 0;
-  bottom: 0;
-  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   border-left: 2px solid #000;
-  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  max-width: 75%;
 }
 .Slide a img {
   width: 100%;
