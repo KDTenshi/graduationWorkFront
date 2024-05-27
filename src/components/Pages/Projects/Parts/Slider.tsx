@@ -15,7 +15,7 @@ interface SliderProps {
 const Slider: FC<SliderProps> = ({ projects }) => {
   return (
     <Swiper
-      className={st.SLider}
+      className={st.Slider}
       loop={true}
       slidesPerView={1}
       spaceBetween={25}
