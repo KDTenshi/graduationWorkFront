@@ -1,0 +1,51 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Promo {
+  width: 90vw;
+  margin: sp.$large auto;
+
+  & h2 {
+    @include font_black_36(700);
+    text-transform: uppercase;
+  }
+}
+
+.Wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: sp.$medium 0;
+
+  & iframe {
+    width: 60vw;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Wrap {
+    & iframe {
+      width: 80vw;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Wrap {
+    & iframe {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrap {
+    & iframe {
+      width: 90vw;
+      height: 250px;
+    }
+  }
+}

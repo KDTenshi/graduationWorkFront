@@ -1,0 +1,46 @@
+.Promo {
+  width: 90vw;
+  margin: 50px auto;
+}
+.Promo h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.Promo h2::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Promo h2::selection {
+  background: #000;
+  color: #fff;
+}
+
+.Wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+}
+.Wrap iframe {
+  width: 60vw;
+  height: 450px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Wrap iframe {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Wrap iframe {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Wrap iframe {
+    width: 90vw;
+    height: 250px;
+  }
+}/*# sourceMappingURL=Promo.module.css.map */

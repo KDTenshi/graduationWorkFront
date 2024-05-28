@@ -3,6 +3,7 @@ import Benefits from "@/components/Pages/Benefits/Benefits";
 import Contacts from "@/components/Pages/Contacts/Contacts";
 import Map from "@/components/Pages/Map/Map";
 import Projects from "@/components/Pages/Projects/Projects";
+import Promo from "@/components/Pages/Promo/Promo";
 import ReviewsSlider from "@/components/Pages/ReviewsSlider/ReviewsSlider";
 import Sertificates from "@/components/Pages/Sertificates/Sertificates";
 import { Metadata } from "next";
@@ -18,6 +19,7 @@ const AboutPage: FC = () => {
       <Banner />
       <Contacts />
       <Benefits />
+      <Promo />
       <Sertificates />
       <ReviewsSlider />
       <Projects />
