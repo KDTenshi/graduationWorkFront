@@ -1,0 +1,42 @@
+.Map {
+  width: 90vw;
+  margin: 50px auto;
+}
+.Map h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.Map h2::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Map h2::selection {
+  background: #000;
+  color: #fff;
+}
+
+.Wrap {
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Wrap iframe {
+  width: 60vw;
+  height: 500px;
+  border: 2px solid #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .Wrap iframe {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Wrap iframe {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=Map.module.css.map */

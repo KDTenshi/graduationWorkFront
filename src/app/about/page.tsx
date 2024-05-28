@@ -1,6 +1,7 @@
 import Banner from "@/components/Pages/Banner/Banner";
 import Benefits from "@/components/Pages/Benefits/Benefits";
 import Contacts from "@/components/Pages/Contacts/Contacts";
+import Map from "@/components/Pages/Map/Map";
 import Projects from "@/components/Pages/Projects/Projects";
 import ReviewsSlider from "@/components/Pages/ReviewsSlider/ReviewsSlider";
 import Sertificates from "@/components/Pages/Sertificates/Sertificates";
@@ -20,6 +21,7 @@ const AboutPage: FC = () => {
       <Sertificates />
       <ReviewsSlider />
       <Projects />
+      <Map />
     </main>
   );
 };
