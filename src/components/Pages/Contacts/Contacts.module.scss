@@ -1,0 +1,110 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Contacts {
+  width: 100%;
+  padding: sp.$large;
+  background: c.$black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: sp.$large;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  gap: sp.$mid_small;
+
+  & p {
+    @include font_white_24();
+    text-transform: uppercase;
+
+    & a {
+      @include font_white_24();
+      @include link_white();
+    }
+  }
+}
+
+.Socials {
+  display: flex;
+  flex-direction: column;
+  gap: sp.$mid_small;
+
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: sp.$small sp.$extra_large;
+    border: 2px solid c.$white;
+    background: c.$white;
+    @include font_black_20();
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: sp.$small;
+    transition: all 0.25s;
+
+    &:hover {
+      background: c.$black;
+      @include font_white_20();
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Links {
+    & p {
+      @include font_white_20();
+
+      & a {
+        @include font_white_20();
+      }
+    }
+  }
+
+  .Socials {
+    & a {
+      @include font_black_16();
+
+      &:hover {
+        @include font_white_16();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Contacts {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Contacts {
+    padding: sp.$large sp.$mid_small;
+  }
+
+  .Links {
+    & p {
+      @include font_white_16();
+
+      & a {
+        @include font_white_16();
+      }
+    }
+  }
+
+  .Socials {
+    & a {
+      padding: sp.$small sp.$medium;
+      @include font_black_14();
+
+      &:hover {
+        @include font_white_14();
+      }
+    }
+  }
+}

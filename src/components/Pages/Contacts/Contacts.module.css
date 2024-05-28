@@ -1,0 +1,220 @@
+.Contacts {
+  width: 100%;
+  padding: 50px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Links p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+.Links p::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Links p::selection {
+  background: #fff;
+  color: #000;
+}
+.Links p a {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.Links p a::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Links p a::selection {
+  background: #fff;
+  color: #000;
+}
+.Links p a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  bottom: -5px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.25s;
+}
+.Links p a:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.Socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 75px;
+  border: 2px solid #fff;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.25s;
+}
+.Socials a::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Socials a::selection {
+  background: #000;
+  color: #fff;
+}
+.Socials a:hover {
+  background: #000;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.Socials a:hover::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Socials a:hover::selection {
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .Links p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Links p::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Links p::selection {
+    background: #fff;
+    color: #000;
+  }
+  .Links p a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Links p a::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Links p a::selection {
+    background: #fff;
+    color: #000;
+  }
+  .Socials a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+  .Socials a::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .Socials a::selection {
+    background: #000;
+    color: #fff;
+  }
+  .Socials a:hover {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Socials a:hover::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Socials a:hover::selection {
+    background: #fff;
+    color: #000;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Contacts {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Contacts {
+    padding: 50px 15px;
+  }
+  .Links p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Links p::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Links p::selection {
+    background: #fff;
+    color: #000;
+  }
+  .Links p a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Links p a::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Links p a::selection {
+    background: #fff;
+    color: #000;
+  }
+  .Socials a {
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
+  .Socials a::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  .Socials a::selection {
+    background: #000;
+    color: #fff;
+  }
+  .Socials a:hover {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Socials a:hover::-moz-selection {
+    background: #fff;
+    color: #000;
+  }
+  .Socials a:hover::selection {
+    background: #fff;
+    color: #000;
+  }
+}/*# sourceMappingURL=Contacts.module.css.map */
