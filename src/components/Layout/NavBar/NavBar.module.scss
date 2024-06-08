@@ -19,6 +19,7 @@
       display: block;
       text-transform: uppercase;
       @include font_white_16();
+      text-align: left;
 
       &:hover,
       &:focus,
@@ -177,6 +178,10 @@
 
 @media screen and (max-width: 1000px) {
   .NavBar {
+    display: none;
+  }
+
+  .NavBarSkeleton {
     display: none;
   }
 }

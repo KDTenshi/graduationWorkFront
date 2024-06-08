@@ -1,9 +1,10 @@
 import { FC } from "react";
 import st from "../NavBar.module.css";
 import Link from "next/link";
+import { TSection } from "@/Types";
 
 interface HorizontalProps {
-  sections: { id: number; title: string; categories: string[] }[];
+  sections: TSection[];
 }
 
 const Horizontal: FC<HorizontalProps> = ({ sections }) => {
@@ -14,8 +15,8 @@ const Horizontal: FC<HorizontalProps> = ({ sections }) => {
           <p>{section.title}</p>
           <div className={st.Dropdown}>
             {section.categories.map((category) => (
-              <Link href={"/"} className={st.Link} key={category}>
-                {category}
+              <Link href={`/categories/${category.id}`} className={st.Link} key={category.id}>
+                {category.title}
               </Link>
             ))}
           </div>

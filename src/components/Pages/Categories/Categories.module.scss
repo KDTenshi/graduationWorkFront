@@ -1,0 +1,33 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: sp.$large auto;
+  gap: sp.$mid_small;
+
+  & a {
+    @include font_white_20();
+    padding: sp.$medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: c.$black;
+    transition: all 0.25s;
+
+    &:hover {
+      background: c.$white;
+      box-shadow: 0 0 15px 5px c.$black;
+      @include font_black_20();
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Categories {
+    grid-template-columns: 1fr;
+  }
+}

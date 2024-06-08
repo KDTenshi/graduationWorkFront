@@ -15,10 +15,7 @@
   overflow-y: auto;
   overscroll-behavior: contain;
   opacity: 0.9;
-
-  &_Hidden {
-    display: none;
-  }
+  display: none;
 }
 
 .Links {
@@ -26,12 +23,6 @@
   padding: 0 sp.$medium;
   display: flex;
   flex-direction: column;
-}
-
-.Link {
-  @include font_white_16();
-  @include link_white();
-  text-align: center;
 }
 
 @media screen and (1000px < width) {

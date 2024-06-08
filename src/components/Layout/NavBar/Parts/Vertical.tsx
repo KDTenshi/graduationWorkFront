@@ -3,16 +3,17 @@ import st from "../NavBar.module.css";
 import Link from "next/link";
 import MailLink from "@/components/UI/MailLink/MailLink";
 import PhoneLink from "@/components/UI/PhoneLink/PhoneLink";
+import { TSection } from "@/Types";
 
 interface VerticalProps {
-  sections: { id: number; title: string; categories: string[] }[];
+  sections: TSection[];
 }
 
 const Vertical: FC<VerticalProps> = ({ sections }) => {
   return (
     <nav className={st.NavBar_Vertical}>
       {sections.map((section) => (
-        <Link className={st.Item} href={"/"} key={section.id}>
+        <Link className={st.Item} href={`/sections/${section.id}`} key={section.id}>
           {section.title}
         </Link>
       ))}

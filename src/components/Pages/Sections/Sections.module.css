@@ -13,6 +13,7 @@
   position: relative;
   padding: 15px 25px;
   text-decoration: none;
+  transition: all 0.25s;
 }
 .Section p {
   font-size: 20px;
@@ -32,6 +33,10 @@
 .Section img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.Section:hover {
+  box-shadow: 0 0 10px 5px #000;
+  filter: brightness(125%);
 }
 
 @media screen and (max-width: 1000px) {

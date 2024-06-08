@@ -1,0 +1,151 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Banner {
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.Image {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  position: relative;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  & h3 {
+    @include font_white(48px, 900);
+    text-transform: uppercase;
+    position: absolute;
+    left: sp.$large;
+    bottom: sp.$extra_large;
+    width: 75%;
+  }
+}
+
+.Form {
+  padding: sp.$medium;
+  padding-bottom: sp.$extra_large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: sp.$small;
+  width: 100%;
+
+  & h3 {
+    @include font_black_24(700);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  & input {
+    width: 100%;
+    border: 2px solid c.$black;
+    @include font_black_16();
+    padding: sp.$small sp.$mid_small;
+    outline: 0;
+  }
+
+  & button {
+    border: 2px solid c.$black;
+    background: c.$black;
+    @include font_white_16();
+    padding: sp.$small sp.$medium;
+    border-radius: sp.$small;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:hover {
+      background: c.$white;
+      @include font_black_16();
+    }
+  }
+
+  & p {
+    @include font_black_12();
+    text-align: center;
+    width: 75%;
+
+    & a {
+      @include font_black_12();
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Banner {
+    grid-template-columns: 3fr 2fr;
+  }
+  .Image {
+    & h3 {
+      left: sp.$medium;
+      bottom: sp.$large;
+      @include font_white(40px, 900);
+    }
+  }
+
+  .Form {
+    & p {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Banner {
+    display: block;
+    height: auto;
+  }
+
+  .Image {
+    height: 100vh;
+  }
+
+  .Form {
+    padding: sp.$medium;
+    & input {
+      width: 80%;
+    }
+
+    & p {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Image {
+    & h3 {
+      left: sp.$mid_small;
+      bottom: sp.$mid_large;
+      @include font_white_36(900);
+    }
+  }
+  .Form {
+    & p {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Form {
+    & input {
+      width: 100%;
+    }
+
+    & p {
+      width: 100%;
+    }
+  }
+}

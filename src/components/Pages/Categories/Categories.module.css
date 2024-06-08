@@ -1,0 +1,46 @@
+.Categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: 50px auto;
+  gap: 15px;
+}
+.Categories a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  padding: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #000;
+  transition: all 0.25s;
+}
+.Categories a::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+.Categories a::selection {
+  background: #fff;
+  color: #000;
+}
+.Categories a:hover {
+  background: #fff;
+  box-shadow: 0 0 15px 5px #000;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.Categories a:hover::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Categories a:hover::selection {
+  background: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .Categories {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=Categories.module.css.map */

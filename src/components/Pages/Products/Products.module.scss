@@ -1,0 +1,63 @@
+@use "../../../styles/variables/colors" as c;
+@use "../../../styles/variables/spacings" as sp;
+
+@import "../../../styles/variables/mixins";
+
+.Products {
+  display: grid;
+  width: 90%;
+  margin: sp.$large auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: sp.$mid_small;
+}
+
+.Product {
+  background: c.$white;
+  display: flex;
+  flex-direction: column;
+  gap: sp.$mid_small;
+  padding: sp.$mid_small sp.$medium;
+  transition: all 0.25s;
+
+  & h3 {
+    @include font_black_20(700);
+    text-transform: uppercase;
+  }
+
+  & p {
+    @include font_black_16();
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px c.$black;
+  }
+}
+
+.Params {
+  padding-left: sp.$extra_small;
+  display: flex;
+  flex-direction: column;
+  gap: sp.$small;
+
+  & p {
+    @include font_black_14();
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Products {
+    grid-template-columns: 1fr;
+  }
+}

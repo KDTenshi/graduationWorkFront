@@ -63,6 +63,13 @@
   background: none;
   border: 0;
 }
+.Burger:focus + #SideBar, .Burger:focus-within + #SideBar, .Burger:active + #SideBar {
+  display: block;
+}
+
+#SideBar:focus, #SideBar:focus-within, #SideBar:active {
+  display: block;
+}
 
 @media screen and (max-width: 1100px) {
   .Wrap {

@@ -41,6 +41,22 @@
   cursor: pointer;
   background: none;
   border: 0;
+
+  &:focus,
+  &:focus-within,
+  &:active {
+    & + #SideBar {
+      display: block;
+    }
+  }
+}
+
+#SideBar {
+  &:focus,
+  &:focus-within,
+  &:active {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1100px) {

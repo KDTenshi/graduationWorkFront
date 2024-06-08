@@ -16,6 +16,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #fff;
+  text-align: left;
 }
 .NavBar_Vertical .Item::-moz-selection {
   background: #fff;
@@ -228,6 +229,9 @@
 }
 @media screen and (max-width: 1000px) {
   .NavBar {
+    display: none;
+  }
+  .NavBarSkeleton {
     display: none;
   }
 }/*# sourceMappingURL=NavBar.module.css.map */

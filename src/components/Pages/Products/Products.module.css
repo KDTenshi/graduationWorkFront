@@ -1,0 +1,82 @@
+.Products {
+  display: grid;
+  width: 90%;
+  margin: 50px auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.Product {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 25px;
+  transition: all 0.25s;
+}
+.Product h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.Product h3::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Product h3::selection {
+  background: #000;
+  color: #fff;
+}
+.Product p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.Product p::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Product p::selection {
+  background: #000;
+  color: #fff;
+}
+.Product:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+.Params {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Params p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.Params p::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+.Params p::selection {
+  background: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .Products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .Products {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=Products.module.css.map */
